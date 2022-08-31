@@ -8,6 +8,11 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>Kendo News</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../styles/news.css" />
   </head>
   <body>
     <div class="page">
@@ -33,6 +38,27 @@
         </nav>
       </header>
       <main class="news">
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+
         <section class="news__section">
           <div class="news__wrapper">
             <img
@@ -170,53 +196,77 @@
             <h3 class="news__newsletter-text">
               Subscribe to our newsletter
             </h3>
-            <form class="news__form" name="subscribeForm" novalidate>
-              <label class="news__form-field" for="name-input">
-                <input
-                  class="news__form-input"
-                  id="name-input"
-                  type="text"
-                  name="name"
-                  placeholder="Name"
-                  minlength="2"
-                  maxlength="40"
-                  required
-                />
-                <span
-                  class="news__form-error"
-                  id="name-input-error"
-                ></span>
-              </label>
-              <label class="news__form-field" for="email-input">
-                <input
-                  class="news__form-input"
-                  id="email-input"
-                  type="email"
-                  name="email"
-                  placeholder="Email"
-                  minlength="2"
-                  maxlength="40"
-                  required
-                />
-                <span
-                  class="news__form-error"
-                  id="email-input-error"
-                ></span>
-              </label>
-              <button
-                class="news__form-button"
-                type="submit"
-                aria-label="Subscribe"
-              >
-                Subscribe
-              </button>
-            </form>
+
+            <button
+              class="news__form-button"
+              type="button"
+              aria-label="Subscribe"
+            >
+              Subscribe
+            </button>
           </div>
         </section>
       </main>
       <footer class="footer">
         <p class="footer__text">Created by Hoang Le Chau 2022</p>
       </footer>
+
+      <div class="modal modal_type_edit">
+        <div class="modal__content">
+          <button
+            class="modal__close"
+            type="button"
+            aria-label="Close"
+          ></button>
+          <h3 class="modal__title">Edit profile</h3>
+          <form class="modal__form" name="modalForm" novalidate>
+            <label class="modal__field" for="name-input">
+              <input
+                class="modal__input"
+                id="name-input"
+                type="text"
+                name="name"
+                placeholder="Name"
+                minlength="2"
+                maxlength="40"
+                required
+              />
+              <span class="modal__error" id="name-input-error"></span>
+            </label>
+            <label class="modal__field" for="about-input">
+              <input
+                class="modal__input"
+                id="about-input"
+                type="text"
+                name="about"
+                placeholder="About me"
+                minlength="2"
+                maxlength="200"
+                required
+              />
+              <span
+                class="modal__error"
+                id="about-input-error"
+              ></span>
+            </label>
+            <button
+              class="modal__button"
+              type="submit"
+              aria-label="Save"
+            >
+              Save
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../scripts/news.js"></script>
   </body>
 </html>

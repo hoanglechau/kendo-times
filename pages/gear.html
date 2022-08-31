@@ -8,6 +8,11 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>Kendo Gear</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/aos@next/dist/aos.css"
+    />
+    <link rel="stylesheet" href="../styles/gear.css" />
   </head>
   <body>
     <div class="page">
@@ -34,6 +39,21 @@
       </header>
       <main class="gear">
         <h1 class="gear__heading">Kengo Gear</h1>
+
+        <div class="item" data-aos="fade-up">1</div>
+        <div class="item" data-aos="fade-down">2</div>
+        <div class="item" data-aos="fade-right">3</div>
+        <div class="item" data-aos="fade-left">4</div>
+
+        <div class="item" data-aos="zoom-in">5</div>
+        <div class="item" data-aos="zoom-out">6</div>
+
+        <div class="item" data-aos="slide-up">7</div>
+
+        <div class="item" data-aos="flip-up">8</div>
+        <div class="item" data-aos="flip-down">9</div>
+        <div class="item" data-aos="flip-right">10</div>
+        <div class="item" data-aos="flip-left">11</div>
 
         <h2 class="gear__title">Shinai</h2>
         <img
@@ -149,6 +169,20 @@
       <footer class="footer">
         <p class="footer__text">Created by Hoang Le Chau 2022</p>
       </footer>
+
+      <div class="modal modal_type_preview">
+        <div class="modal__content modal__content_type_preview">
+          <button
+            class="modal__close"
+            type="button"
+            aria-label="Close"
+          ></button>
+          <img class="modal__preview-image" src="#" alt="#" />
+          <h3 class="modal__card-title"></h3>
+        </div>
+      </div>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="../scripts/gear.js"></script>
   </body>
 </html>

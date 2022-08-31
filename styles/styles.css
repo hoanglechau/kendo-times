@@ -1,0 +1,39 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts/fonts.css);
+
+.footer {
+  max-width: 880px;
+  margin: auto;
+  padding-bottom: 60px;
+}
+
+.header {
+  max-width: 880px;
+  margin: auto;
+  border-bottom: 1px solid rgba(84, 84, 84, 0.7);
+  padding-top: 45px;
+}
+
+.main {
+  margin: 0;
+}
+
+.page {
+  max-width: 100vw;
+  min-width: 320px;
+  min-height: 100vh;
+  margin: auto;
+  background-color: #000;
+  font-family: 'Inter', Helvetica, sans-serif;
+  color: #fff;
+}
+
+@media screen and (max-width: 568px) {
+  .footer {
+    padding-bottom: 36px;
+  }
+
+  .header {
+    padding-top: 28px;
+  }
+}

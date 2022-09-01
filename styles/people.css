@@ -1,0 +1,124 @@
+.modal {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+  transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+  -webkit-transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+  -moz-transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+  -ms-transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+  -o-transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+}
+
+.modal_open {
+  visibility: visible;
+  pointer-events: all;
+  opacity: 1;
+  transition-delay: 0s;
+}
+
+.modal__preview-image-title {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 15px;
+  color: #fff;
+  margin: 10px auto 0;
+}
+
+.modal__content {
+  position: relative;
+  margin: 100px auto 0;
+  box-sizing: border-box;
+}
+
+.modal__content_preview {
+  background: transparent;
+  max-width: 75vw;
+  max-height: 75vh;
+  width: auto;
+  height: auto;
+  padding: 0;
+}
+
+.modal__close {
+  width: 40px;
+  height: 40px;
+  background: url(../images/close_button.svg) center no-repeat;
+  border: none;
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  cursor: pointer;
+  transition: opacity 0.5s;
+}
+
+.modal__close:hover {
+  opacity: 0.6;
+}
+
+.modal__preview-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.people__content {
+  display: flex;
+}
+
+.people__heading {
+  font-size: 100px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.people__heading-wrapper {
+  border-bottom: 1px solid rgba(84, 84, 84, 0.7);
+}
+
+.people__image {
+  margin: 0 30px 0 0;
+  width: auto;
+  max-height: 300px;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+}
+
+.people__title {
+  font-size: 60px;
+  text-align: center;
+  margin: 80px 0 50px;
+}
+
+.people__text {
+  font-size: 30px;
+  margin: 0 0 30px 0;
+}
+
+.people__wrapper {
+  max-width: 1280px;
+  height: 100%;
+  margin: 0 auto 0;
+}
+
+@media screen and (max-width: 568px) {
+  .modal__content {
+    width: 282px;
+    padding: 25px 22px;
+  }
+
+  .modal__close {
+    width: 26px;
+    height: 26px;
+    right: 0;
+  }
+}

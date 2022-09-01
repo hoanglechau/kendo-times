@@ -8,10 +8,10 @@ AOS.init();
 /*                                  Selectors                                 */
 /* -------------------------------------------------------------------------- */
 
-const previewModal = document.querySelector('.modal_type_preview');
+const previewModal = document.querySelector('.modal_preview');
 const previewImage = document.querySelector('.modal__preview-image');
 const previewImageTitle = document.querySelector(
-  '.modal__card-title',
+  '.modal__preview-image-title',
 );
 const previewModalCloseButton =
   previewModal.querySelector('.modal__close');

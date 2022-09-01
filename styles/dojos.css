@@ -1,4 +1,81 @@
+.dojos__heading {
+  font-size: 100px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.dojos__heading-wrapper {
+  border-bottom: 1px solid rgba(84, 84, 84, 0.7);
+}
+
+.dojos__link {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  transition: background-color 1s;
+  -webkit-transition: background-color 1s;
+  -moz-transition: background-color 1s;
+  -ms-transition: background-color 1s;
+  -o-transition: background-color 1s;
+}
+
+.dojos__link:hover {
+  background-color: red;
+}
+
+.dojos__logo {
+  max-width: 100px;
+  height: auto;
+  margin: 0 30px 0 0;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.dojos__text {
+  font-size: 20px;
+}
+
+.dojos__title {
+  font-size: 40px;
+  margin: 0;
+}
+
+.dojos__wrapper {
+  max-width: 720px;
+  margin: 0 auto 50px;
+}
+
 #map {
-  width: 600px;
-  height: 400px;
+  width: 720px;
+  height: 576px;
+}
+
+#map2 {
+  width: 720px;
+  height: 576px;
+}
+
+#map3 {
+  width: 720px;
+  height: 576px;
+}
+
+#map4 {
+  width: 720px;
+  height: 576px;
+}
+
+#map5 {
+  width: 720px;
+  height: 576px;
+}
+
+#map6 {
+  width: 720px;
+  height: 576px;
 }

@@ -4,24 +4,12 @@
 
 /* Image carousel */
 const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'vertical',
+  direction: 'horizontal',
   loop: true,
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
   },
 });
 
@@ -39,12 +27,12 @@ window.showExample = () => {
 /* -------------------------------------------------------------------------- */
 
 /* Selectors */
-const editModal = document.querySelector('.modal_type_edit');
-const editForm = editModal.querySelector('.modal__form');
-const nameInput = document.querySelector('#name-input');
-const aboutInput = document.querySelector('#about-input');
-const editModalButton = document.querySelector('.news__form-button');
-const editModalCloseButton = editModal.querySelector('.modal__close');
+const subModal = document.querySelector('.modal_subscribe');
+const subForm = subModal.querySelector('.modal__form');
+const subModalButton = document.querySelector(
+  '.news__newsletter-button',
+);
+const subModalCloseButton = subModal.querySelector('.modal__close');
 
 /* Functions */
 function handlePressEscape(evt) {
@@ -63,36 +51,28 @@ function closeModal(modal) {
   document.removeEventListener('keydown', handlePressEscape);
 }
 
-function preFillEditForm() {
-  if (!editModal.classList.contains('modal_open')) {
-    nameInput.value = 'Hoang';
-    aboutInput.value = 'Software Engineer';
-  }
-}
-
-function editFormSubmitHandler(evt) {
+function subFormSubmitHandler(evt) {
   evt.preventDefault();
 
   showExample();
 
-  closeModal(editModal);
+  closeModal(subModal);
 }
 
 /* Event Listeners */
-editForm.addEventListener('submit', editFormSubmitHandler);
+subForm.addEventListener('submit', subFormSubmitHandler);
 
-editModalButton.addEventListener('click', () => {
-  preFillEditForm();
-  openModal(editModal);
+subModalButton.addEventListener('click', () => {
+  openModal(subModal);
 });
 
-editModalCloseButton.addEventListener('click', () =>
-  closeModal(editModal),
+subModalCloseButton.addEventListener('click', () =>
+  closeModal(subModal),
 );
 
-editModal.addEventListener('mousedown', (evt) => {
-  if (evt.target === editModal) {
-    closeModal(editModal);
+subModal.addEventListener('mousedown', (evt) => {
+  if (evt.target === subModal) {
+    closeModal(subModal);
   }
 });
 

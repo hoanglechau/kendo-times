@@ -18,177 +18,217 @@
   <body>
     <div class="page">
       <header class="header">
-        <div class="header__logo">
-          <a href="../index.html">
-            <img
-              class="header__logo-image"
-              src="../images/logo.jpg"
-              alt="Kendo Logo"
-            />
-          </a>
-          <p>Kendo</p>
-        </div>
+        <a class="header__logo" href="./news.html">
+          <img
+            class="header__logo-image"
+            src="../images/logo.jpg"
+            alt="Kendo Logo"
+          />
+
+          <p class="header__logo-text">Kendo Times</p>
+        </a>
         <nav class="header__menu">
           <ul class="header__menu-list">
-            <li><a href="./news.html">News</a></li>
-            <li><a href="./history.html">History</a></li>
-            <li><a href="./people.html">People</a></li>
-            <li><a href="./dojos.html">Dojos</a></li>
-            <li><a href="./gear.html">Gear</a></li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="./news.html">News</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="./history.html"
+                >History</a
+              >
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="./people.html"
+                >People</a
+              >
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="./dojos.html"
+                >Dojos</a
+              >
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="./gear.html">Gear</a>
+            </li>
           </ul>
         </nav>
       </header>
       <main class="news">
-        <!-- Slider main container -->
         <div class="swiper">
-          <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            ...
+            <div class="swiper-slide">
+              <img
+                class="swiper-image"
+                src="../images/slide1.jpg"
+                alt="Slide 1"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="swiper-image"
+                src="../images/slide2.jpg"
+                alt="Slide 2"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="swiper-image"
+                src="../images/slide3.jpg"
+                alt="Slide 3"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="swiper-image"
+                src="../images/slide4.jpg"
+                alt="Slide 4"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="swiper-image"
+                src="../images/slide5.jpg"
+                alt="Slide 5"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="swiper-image"
+                src="../images/slide6.jpg"
+                alt="Slide 6"
+              />
+            </div>
           </div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
-
-          <!-- If we need navigation buttons -->
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
-
-          <!-- If we need scrollbar -->
-          <div class="swiper-scrollbar"></div>
         </div>
 
         <section class="news__section">
           <div class="news__wrapper">
-            <img
-              class="news__image"
-              src="../images/news1.jpg"
-              alt="Swinging swords and drumsticks"
-            />
+            <a
+              class="news__link"
+              href="https://www.japantimes.co.jp/life/2019/05/12/lifestyle/swinging-swords-drumsticks-personal-fitness-draws-tradition/"
+              target="_blank"
+            >
+              <img
+                class="news__image"
+                src="../images/news1.jpg"
+                alt="Swinging swords and drumsticks"
+              />
 
-            <div class="news__information">
-              <h2 class="news__heading">
-                Swinging swords and drumsticks: Personal fitness draws
-                on tradition
-              </h2>
-              <p class="news__text">
-                Shindo and taikobics give personal fitness regimes a
-                Japanese twist with kendo moves and taiko drumming.
-              </p>
-              <a
-                class="news__link"
-                href="https://www.japantimes.co.jp/life/2019/05/12/lifestyle/swinging-swords-drumsticks-personal-fitness-draws-tradition/"
-                >Read more</a
-              >
-            </div>
-          </div>
+              <div class="news__information">
+                <h2 class="news__heading">
+                  Swinging swords and drumsticks: Personal fitness
+                  draws on tradition
+                </h2>
+                <p class="news__text">
+                  Shindo and taikobics give personal fitness regimes a
+                  Japanese twist with kendo moves and taiko drumming.
+                </p>
+              </div>
+            </a>
 
-          <div class="news__wrapper">
-            <img
-              class="news__image"
-              src="../images/news2.jpg"
-              alt="Japan's kendo federation"
-            />
+            <a
+              class="news__link"
+              href="https://www.japantimes.co.jp/news/2018/08/17/national/japans-kendo-federation-reveals-widespread-corruption-promotion-system/"
+              target="_blank"
+            >
+              <img
+                class="news__image"
+                src="../images/news2.jpg"
+                alt="Japan's kendo federation"
+              />
 
-            <div class="news__information">
-              <h2 class="news__heading">
-                Japan's kendo federation reveals widespread corruption
-                in promotion system
-              </h2>
-              <p class="news__text">
-                The martial art of iaidō has been hit by its own
-                corruption scandal, with the All Japan Kendo
-                Federation saying Friday that people taking
-                promotional exams often paid money to their examiners
-                in order to win their approval.
-              </p>
-              <a
-                class="news__link"
-                href="https://www.japantimes.co.jp/news/2018/08/17/national/japans-kendo-federation-reveals-widespread-corruption-promotion-system/"
-                >Read more</a
-              >
-            </div>
-          </div>
+              <div class="news__information">
+                <h2 class="news__heading">
+                  Japan's kendo federation reveals widespread
+                  corruption in promotion system
+                </h2>
+                <p class="news__text">
+                  The martial art of iaidō has been hit by its own
+                  corruption scandal, with the All Japan Kendo
+                  Federation saying Friday that people taking
+                  promotional exams often paid money to their
+                  examiners in order to win their approval.
+                </p>
+              </div>
+            </a>
 
-          <div class="news__wrapper">
-            <img
-              class="news__image"
-              src="../images/news3.jpg"
-              alt="Kendo drama 'Mukoku'"
-            />
+            <a
+              class="news__link"
+              href="https://www.japantimes.co.jp/culture/2017/06/14/films/film-reviews/kendo-drama-mukoku-takes-stab-showa-era-sports-spirit/"
+              target="_blank"
+            >
+              <img
+                class="news__image"
+                src="../images/news3.jpg"
+                alt="Kendo drama 'Mukoku'"
+              />
 
-            <div class="news__information">
-              <h2 class="news__heading">
-                Kendo drama 'Mukoku' takes a stab at Showa Era sports
-                spirit
-              </h2>
-              <p class="news__text">
-                One of the attractions of Asian martial arts for many
-                Westerners (including this one) is the promise of
-                self-improvement that goes beyond better street
-                fighting.
-              </p>
-              <a
-                class="news__link"
-                href="https://www.japantimes.co.jp/culture/2017/06/14/films/film-reviews/kendo-drama-mukoku-takes-stab-showa-era-sports-spirit/"
-                >Read more</a
-              >
-            </div>
-          </div>
+              <div class="news__information">
+                <h2 class="news__heading">
+                  Kendo drama 'Mukoku' takes a stab at Showa Era
+                  sports spirit
+                </h2>
+                <p class="news__text">
+                  One of the attractions of Asian martial arts for
+                  many Westerners (including this one) is the promise
+                  of self-improvement that goes beyond better street
+                  fighting.
+                </p>
+              </div>
+            </a>
 
-          <div class="news__wrapper">
-            <img
-              class="news__image"
-              src="../images/news4.jpg"
-              alt="Kendo can bring Japan's passive smartphone zombies
+            <a
+              class="news__link"
+              href="https://www.japantimes.co.jp/life/2015/07/06/language/kendo-can-bring-japans-passive-smartphone-zombies-back-life/"
+              target="_blank"
+            >
+              <img
+                class="news__image"
+                src="../images/news4.jpg"
+                alt="Kendo can bring Japan's passive smartphone zombies
                 back to life"
-            />
+              />
 
-            <div class="news__information">
-              <h2 class="news__heading">
-                Kendo can bring Japan's passive smartphone zombies
-                back to life
-              </h2>
-              <p class="news__text">
-                When I visited the Nippon Budokan (日本武道館) to
-                watch the Kokusai Kendo Senshuken (世界剣道選手権大会,
-                World Kendo Championships), an unexpected surge of joy
-                coursed through my veins.
-              </p>
-              <a
-                class="news__link"
-                href="https://www.japantimes.co.jp/life/2015/07/06/language/kendo-can-bring-japans-passive-smartphone-zombies-back-life/"
-                >Read more</a
-              >
-            </div>
-          </div>
+              <div class="news__information">
+                <h2 class="news__heading">
+                  Kendo can bring Japan's passive smartphone zombies
+                  back to life
+                </h2>
+                <p class="news__text">
+                  When I visited the Nippon Budokan (日本武道館) to
+                  watch the Kokusai Kendo Senshuken
+                  (世界剣道選手権大会, World Kendo Championships), an
+                  unexpected surge of joy coursed through my veins.
+                </p>
+              </div>
+            </a>
 
-          <div class="news__wrapper">
-            <img
-              class="news__image"
-              src="../images/news5.jpg"
-              alt="A kendo primer"
-            />
+            <a
+              class="news__link"
+              href="https://www.japantimes.co.jp/community/2015/05/20/issues/know-way-sword-know-thyself-kendo-primer/"
+              target="_blank"
+            >
+              <img
+                class="news__image"
+                src="../images/news5.jpg"
+                alt="A kendo primer"
+              />
 
-            <div class="news__information">
-              <h2 class="news__heading">
-                Know the way of the sword, know thyself: a kendo
-                primer
-              </h2>
-              <p class="news__text">
-                With Tokyo poised to host the world championships for
-                the first time since the inaugural competition in
-                1970, here's all you need to know to get the most out
-                of the bouts.
-              </p>
-              <a
-                class="news__link"
-                href="https://www.japantimes.co.jp/community/2015/05/20/issues/know-way-sword-know-thyself-kendo-primer/"
-                >Read more</a
-              >
-            </div>
+              <div class="news__information">
+                <h2 class="news__heading">
+                  Know the way of the sword, know thyself: a kendo
+                  primer
+                </h2>
+                <p class="news__text">
+                  With Tokyo poised to host the world championships
+                  for the first time since the inaugural competition
+                  in 1970, here's all you need to know to get the most
+                  out of the bouts.
+                </p>
+              </div>
+            </a>
           </div>
         </section>
 
@@ -199,7 +239,7 @@
             </h3>
 
             <button
-              class="news__form-button"
+              class="news__newsletter-button"
               type="button"
               aria-label="Subscribe"
             >
@@ -209,17 +249,17 @@
         </section>
       </main>
       <footer class="footer">
-        <p class="footer__text">Created by Hoang Le Chau 2022</p>
+        <p class="footer__text">Created by Hoang Le Chau © 2022</p>
       </footer>
 
-      <div class="modal modal_type_edit">
+      <div class="modal modal_subscribe">
         <div class="modal__content">
           <button
             class="modal__close"
             type="button"
             aria-label="Close"
           ></button>
-          <h3 class="modal__title">Edit profile</h3>
+          <h3 class="modal__title">Subscribe to our newsletter</h3>
           <form class="modal__form" name="modalForm" novalidate>
             <label class="modal__field" for="name-input">
               <input
@@ -234,28 +274,28 @@
               />
               <span class="modal__error" id="name-input-error"></span>
             </label>
-            <label class="modal__field" for="about-input">
+            <label class="modal__field" for="email-input">
               <input
                 class="modal__input"
-                id="about-input"
-                type="text"
-                name="about"
-                placeholder="About me"
+                id="email-input"
+                type="email"
+                name="email"
+                placeholder="Email"
                 minlength="2"
-                maxlength="200"
+                maxlength="40"
                 required
               />
               <span
                 class="modal__error"
-                id="about-input-error"
+                id="email-input-error"
               ></span>
             </label>
             <button
               class="modal__button"
               type="submit"
-              aria-label="Save"
+              aria-label="Subscribe"
             >
-              Save
+              Subscribe
             </button>
           </form>
         </div>
@@ -263,11 +303,6 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.6.1.js"
-      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
-      crossorigin="anonymous"
-    ></script>
     <script src="../scripts/news.js"></script>
   </body>
 </html>

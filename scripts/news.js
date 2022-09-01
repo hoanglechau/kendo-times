@@ -14,7 +14,7 @@ const swiper = new Swiper('.swiper', {
 });
 
 /* Popup */
-window.showExample = () => {
+window.showSuccess = () => {
   Swal.fire({
     icon: 'success',
     title: 'You have been added to our newsletter',
@@ -29,9 +29,10 @@ window.showExample = () => {
 /* Selectors */
 const subModal = document.querySelector('.modal_subscribe');
 const subForm = subModal.querySelector('.modal__form');
-const subModalButton = document.querySelector(
-  '.news__newsletter-button',
-);
+const subModalButton = subModal.querySelector('.modal__button');
+const nameInput = subForm.querySelector('#name-input');
+const emailInput = subForm.querySelector('#email-input');
+const subButton = document.querySelector('.news__newsletter-button');
 const subModalCloseButton = subModal.querySelector('.modal__close');
 
 /* Functions */
@@ -43,6 +44,8 @@ function handlePressEscape(evt) {
 
 function openModal(modal) {
   modal.classList.add('modal_open');
+  subModalButton.classList.add('modal__button_inactive');
+  subModalButton.disabled = true;
   document.addEventListener('keydown', handlePressEscape);
 }
 
@@ -53,16 +56,16 @@ function closeModal(modal) {
 
 function subFormSubmitHandler(evt) {
   evt.preventDefault();
-
-  showExample();
-
   closeModal(subModal);
+  nameInput.value = '';
+  emailInput.value = '';
+  showSuccess();
 }
 
 /* Event Listeners */
 subForm.addEventListener('submit', subFormSubmitHandler);
 
-subModalButton.addEventListener('click', () => {
+subButton.addEventListener('click', () => {
   openModal(subModal);
 });
 

@@ -134,6 +134,144 @@
   margin: 0;
 }
 
+.news__heading {
+  margin: 0 0 20px 0;
+}
+
+.news__image {
+  margin: 0 24px 0 0;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.news__information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.news__link {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  padding: 20px;
+  transition: background-color 1s;
+  -webkit-transition: background-color 1s;
+  -moz-transition: background-color 1s;
+  -ms-transition: background-color 1s;
+  -o-transition: background-color 1s;
+}
+
+.news__link:hover {
+  background-color: red;
+}
+
+.news__newsletter {
+  border-top: 1px solid rgba(84, 84, 84, 0.7);
+}
+
+.news__newsletter-button {
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+  transition: background-color 1s;
+  -webkit-transition: background-color 1s;
+  -moz-transition: background-color 1s;
+  -ms-transition: background-color 1s;
+  -o-transition: background-color 1s;
+}
+
+.news__newsletter-button:hover {
+  background-color: red;
+}
+
+.news__newsletter-button:active {
+  box-shadow: 0 6px gray;
+  transform: translateY(6px);
+  -webkit-transform: translateY(6px);
+  -moz-transform: translateY(6px);
+  -ms-transform: translateY(6px);
+  -o-transform: translateY(6px);
+}
+
+.news__newsletter-text {
+  font-size: 50px;
+  margin: 0 auto 15px;
+}
+
+.news__newsletter-wrapper {
+  max-width: 720px;
+  margin: 0 auto 0;
+  padding: 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.news__section {
+  border-top: 1px solid rgba(84, 84, 84, 0.7);
+}
+
+.news__text {
+  margin: 0;
+}
+
+.news__wrapper {
+  max-width: 1920px;
+  margin: 0 auto 0;
+}
+
+.swiper {
+  max-width: 1920px;
+  max-height: 1080px;
+}
+
+.swiper-button-prev {
+  color: red;
+  transition: color 1s;
+  -webkit-transition: color 1s;
+  -moz-transition: color 1s;
+  -ms-transition: color 1s;
+  -o-transition: color 1s;
+}
+
+.swiper-button-prev:hover {
+  color: white;
+}
+
+.swiper-button-next {
+  color: red;
+  transition: color 1s;
+  -webkit-transition: color 1s;
+  -moz-transition: color 1s;
+  -ms-transition: color 1s;
+  -o-transition: color 1s;
+}
+
+.swiper-button-next:hover {
+  color: white;
+}
+
+.swiper-image {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-slide {
+  max-width: 1920px;
+  max-height: 1080px;
+}
+
 @media screen and (max-width: 568px) {
   .modal__button {
     font-size: 14px;
@@ -155,9 +293,4 @@
     font-size: 18px;
     line-height: 22px;
   }
-}
-
-.swiper {
-  width: 600px;
-  height: 300px;
 }

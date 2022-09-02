@@ -1,5 +1,5 @@
 .history__heading {
-  font-size: 100px;
+  font-size: 4vw;
   margin: 20px auto;
   text-align: center;
 }
@@ -9,17 +9,32 @@
 }
 
 .history__title {
-  font-size: 60px;
+  font-size: 3vw;
   text-align: center;
   margin: 80px 0 50px;
 }
 
 .history__text {
-  font-size: 30px;
+  font-size: 1.5vw;
 }
 
 .history__wrapper {
-  max-width: 1280px;
+  max-width: 80%;
   height: 100%;
   margin: 0 auto 0;
+}
+
+@media screen and (max-width: 1280px) {
+  .history__heading {
+    font-size: 6vw;
+  }
+
+  .history__text {
+    font-size: 2.6vw;
+  }
+
+  .history__title {
+    font-size: 5vw;
+    margin: 20px 0 20px;
+  }
 }

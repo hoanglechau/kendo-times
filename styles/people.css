@@ -73,7 +73,7 @@
 }
 
 .people__heading {
-  font-size: 100px;
+  font-size: 4vw;
   margin: 20px auto;
   text-align: center;
 }
@@ -94,20 +94,39 @@
 }
 
 .people__title {
-  font-size: 60px;
+  font-size: 3vw;
   text-align: center;
   margin: 80px 0 50px;
 }
 
 .people__text {
-  font-size: 30px;
+  font-size: 1.5vw;
   margin: 0 0 30px 0;
 }
 
 .people__wrapper {
-  max-width: 1280px;
+  max-width: 80%;
   height: 100%;
   margin: 0 auto 0;
+}
+
+@media screen and (max-width: 1280px) {
+  .people__heading {
+    font-size: 6vw;
+  }
+
+  .people__image {
+    max-height: 200px;
+  }
+
+  .people__text {
+    font-size: 2.4vw;
+  }
+
+  .people__title {
+    font-size: 5vw;
+    margin: 20px 0 20px;
+  }
 }
 
 @media screen and (max-width: 568px) {
@@ -120,5 +139,14 @@
     width: 26px;
     height: 26px;
     right: 0;
+  }
+
+  .people__image {
+    max-height: 100px;
+    margin: 0 15px 0 0;
+  }
+
+  .people__text {
+    font-size: 3vw;
   }
 }

@@ -9,6 +9,7 @@
 
 .footer__text {
   margin: 20px auto 0 20px;
+  font-size: 1vw;
 }
 
 .header {
@@ -20,7 +21,7 @@
 
 .header__logo {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   text-decoration: none;
   padding: 0 10px 0;
   color: white;
@@ -46,8 +47,8 @@
 }
 
 .header__logo-text {
-  margin: 0 0 15px 20px;
-  font-size: 60px;
+  margin: 0 0 0 20px;
+  font-size: 2.5vw;
 }
 
 .header__menu {
@@ -61,7 +62,7 @@
 }
 
 .header__menu-link {
-  font-size: 50px;
+  font-size: 2.2vw;
   text-decoration: none;
   color: white;
   margin: 0;
@@ -97,12 +98,42 @@
   color: #fff;
 }
 
+@media screen and (max-width: 1280px) {
+  .header__logo-image {
+    max-width: 65px;
+    max-height: 65px;
+  }
+
+  .header__menu-item {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__logo-image {
+    max-width: 50px;
+    max-height: 50px;
+  }
+
+  .header__menu-item {
+    margin-right: 30px;
+  }
+}
+
 @media screen and (max-width: 568px) {
+  .header__logo-text {
+    margin: 0 0 0 10px;
+  }
+
+  .header__menu {
+    margin: 0 auto 10px;
+  }
+
   .footer {
-    padding-bottom: 36px;
+    padding-bottom: 30px;
   }
 
   .header {
-    padding-top: 28px;
+    padding-top: 5px;
   }
 }

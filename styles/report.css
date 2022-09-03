@@ -1,0 +1,23 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts/fonts.css);
+
+.page {
+  max-width: 80vw;
+  min-width: 320px;
+  min-height: 100vh;
+  margin: auto;
+  font-family: 'Inter', Helvetica, sans-serif;
+}
+
+.heading {
+  font-size: 3vw;
+  text-align: center;
+}
+
+.title {
+  font-size: 2vw;
+}
+
+.text {
+  font-size: 1vw;
+}

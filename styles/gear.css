@@ -1,3 +1,8 @@
+/* The CSS style sheet of the Gear page */
+
+/* The font-size, max-width, and max-height properties of some of these CSS selectors use "vw" and "vh"
+in order to achieve responsive web design */
+
 .gear__heading {
   font-size: 4vw;
   margin: 20px auto;
@@ -107,6 +112,8 @@
   max-height: 100%;
   object-fit: cover;
 }
+
+/* Media queries for responsive web design */
 
 @media screen and (max-width: 1280px) {
   .gear__heading {

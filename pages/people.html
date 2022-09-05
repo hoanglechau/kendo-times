@@ -7,18 +7,22 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Notable people of Kendo</title>
+    <title>Notable People of Kendo</title>
+    <!-- Link to the default CSS style sheet of the "fullPage.js" JavaScript library for the fullscreen scroll effect -->
     <link
       rel="stylesheet"
       type="text/css"
       href="../libraries/fullPage.js-master/dist/fullpage.css"
     />
+    <!-- Link to my own external CSS style sheets -->
     <link rel="stylesheet" href="../styles/styles.css" />
     <link rel="stylesheet" href="../styles/people.css" />
   </head>
   <body>
     <div class="page">
+      <!-- The Header section -->
       <header class="header">
+        <!-- Clickable logo that links to the Home page-->
         <a class="header__logo" href="../index.html">
           <img
             class="header__logo-image"
@@ -28,6 +32,7 @@
 
           <p class="header__logo-text">Kendo Times</p>
         </a>
+        <!-- Navigation bar with links to the other pages -->
         <nav class="header__menu">
           <ul class="header__menu-list">
             <li class="header__menu-item">
@@ -56,11 +61,19 @@
           </ul>
         </nav>
       </header>
+
+      <!-- The Main section -->
       <main class="people">
+        <!-- The big heading -->
         <div class="people__heading-wrapper">
           <h1 class="people__heading">Notable People of Kendo</h1>
         </div>
 
+        <!--
+          Using the "fullPage.js" JavaScript library for the fullscreen scrolling effect.
+          Some of the code in this "fullpage" div tag was adopted and edited from the "fullpage.js" documentation.
+          Please note that the code inside the "people__wrapper" div tag was written by me.
+        -->
         <div id="fullpage">
           <div class="section">
             <div class="people__wrapper">
@@ -242,24 +255,35 @@
             </div>
           </div>
         </div>
+        <!-- Adopted and edited code for the "fullPage.js" JavaScript library ends here -->
       </main>
+
+      <!-- The Footer section -->
       <footer class="footer">
         <p class="footer__text">Created by Hoang Le Chau © 2022</p>
       </footer>
 
+      <!-- The image preview modal that opens when users click on the images on this page -->
       <div class="modal modal_preview">
         <div class="modal__content modal__content_preview">
+          <!-- The close button -->
           <button
             class="modal__close"
             type="button"
             aria-label="Close"
           ></button>
+          <!-- The image with the src and alt attributes set to those of the image that the users click on -->
           <img class="modal__preview-image" src="#" alt="#" />
+          <!-- The caption below the image -->
           <h3 class="modal__preview-image-title"></h3>
         </div>
       </div>
     </div>
+
+    <!-- Adding JavaScript code to this HTML document -->
+    <!-- Link to the "fullPage" JavaScript library for the fullscreen scrolling effect -->
     <script src="../libraries/fullPage.js-master/dist/fullpage.js"></script>
+    <!-- Link to my own external JavaScript file -->
     <script src="../scripts/people.js"></script>
   </body>
 </html>

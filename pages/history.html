@@ -8,17 +8,21 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>The History of Kendo</title>
+    <!-- Link to the default CSS style sheet of the "fullPage.js" JavaScript library for the fullscreen scroll effect -->
     <link
       rel="stylesheet"
       type="text/css"
       href="../libraries/fullPage.js-master/dist/fullpage.css"
     />
+    <!-- Link to my own external CSS style sheets -->
     <link rel="stylesheet" href="../styles/styles.css" />
     <link rel="stylesheet" href="../styles/history.css" />
   </head>
   <body>
     <div class="page">
+      <!-- The Header section -->
       <header class="header">
+        <!-- Clickable logo that links to the Home page-->
         <a class="header__logo" href="../index.html">
           <img
             class="header__logo-image"
@@ -28,6 +32,7 @@
 
           <p class="header__logo-text">Kendo Times</p>
         </a>
+        <!-- Navigation bar with links to the other pages -->
         <nav class="header__menu">
           <ul class="header__menu-list">
             <li class="header__menu-item">
@@ -56,10 +61,19 @@
           </ul>
         </nav>
       </header>
+
+      <!-- The Main section -->
       <main class="history">
+        <!-- The big heading -->
         <div class="history__heading-wrapper">
           <h1 class="history__heading">The History of Kendo</h1>
         </div>
+
+        <!--
+          Using the "fullPage.js" JavaScript library for the fullscreen scrolling effect.
+          Some of the code in this "fullpage" div tag was adopted and edited from the "fullpage.js" documentation.
+          Please note that the code inside the "history__wrapper" div tags was written by me.
+        -->
         <div id="fullpage">
           <div class="section">
             <div class="history__wrapper">
@@ -280,12 +294,19 @@
             </div>
           </div>
         </div>
+        <!-- Adopted and edited code for the "fullPage.js" JavaScript library ends here -->
       </main>
+
+      <!-- The Footer section -->
       <footer class="footer">
         <p class="footer__text">Created by Hoang Le Chau © 2022</p>
       </footer>
     </div>
+
+    <!-- Adding JavaScript code to this HTML document -->
+    <!-- Link to the "fullPage" JavaScript library for the fullscreen scrolling effect -->
     <script src="../libraries/fullPage.js-master/dist/fullpage.js"></script>
+    <!-- Link to my own external JavaScript file -->
     <script src="../scripts/history.js"></script>
   </body>
 </html>

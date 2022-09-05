@@ -2,9 +2,16 @@
 /*                                  Libraries                                 */
 /* -------------------------------------------------------------------------- */
 
+// The code here was adapted and edited from the documentation of the "Leaflet" JavaScript library in order to set up the interactive maps
+
+// As the method to create each map is the same, I'll only write comments for the first map
+
 /* First map */
+
+// Create the map and set the location to the coordinates of the first dojo. The zoom level is set to "16"
 const map = L.map('map').setView([10.76899, 106.65802], 16);
 
+// Add a tile layer for the map
 const tiles = L.tileLayer(
   'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
   {
@@ -14,7 +21,10 @@ const tiles = L.tileLayer(
   },
 ).addTo(map);
 
+// Add a marker that points to the location of the dojo on the map
 const marker = L.marker([10.76899, 106.65802]).addTo(map);
+
+// Add a popup text box for the marker
 marker
   .bindPopup(
     '<b>Nitoukan Kendo Iaido Vietnam</b><br>219 Ly Thuong Kiet Street, Ward 15, District 11, Ho Chi Minh City',

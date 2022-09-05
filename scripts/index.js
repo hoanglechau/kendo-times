@@ -2,7 +2,9 @@
 /*                                  Libraries                                 */
 /* -------------------------------------------------------------------------- */
 
-/* Image carousel */
+// The code for these two JavaScript libraries was adapted and edited from their documentation
+
+/* Using the "Swiper" library for the image carousel */
 const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
@@ -13,7 +15,7 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
-/* Popup */
+/* Using the "SweetAlert2" library for the subscription confirmation modal */
 window.showSuccess = () => {
   Swal.fire({
     icon: 'success',
@@ -21,6 +23,8 @@ window.showSuccess = () => {
     showConfirmButton: false,
   });
 };
+
+// Adopted and edited code ends here. All the code from this point on was written by me
 
 /* -------------------------------------------------------------------------- */
 /*                          Subscription Form Modal                           */
@@ -36,12 +40,17 @@ const subButton = document.querySelector('.news__newsletter-button');
 const subModalCloseButton = subModal.querySelector('.modal__close');
 
 /* Functions */
+
+// This function lets users close the modal by hitting the "Escape" key on the keyboard
 function handlePressEscape(evt) {
   if (evt.key === 'Escape') {
     closeModal(document.querySelector('.modal_open'));
   }
 }
 
+/* When the subscription modal is opened, the "Subscribe" button will be disabled by default.
+It will only be enabled after the users have entered acceptable input for both the "Name" and the
+"Email" input fields */
 function openModal(modal) {
   modal.classList.add('modal_open');
   subModalButton.classList.add('modal__button_inactive');
@@ -54,6 +63,9 @@ function closeModal(modal) {
   document.removeEventListener('keydown', handlePressEscape);
 }
 
+/* When the form is submitted after the users click on the "Subscribe" button, the values
+of the two input fields will be reset, and the confirmation modal (created using the SweetAlert2 library)
+will be opened by calling the function showSuccess() */
 function subFormSubmitHandler(evt) {
   evt.preventDefault();
   closeModal(subModal);
@@ -73,6 +85,7 @@ subModalCloseButton.addEventListener('click', () =>
   closeModal(subModal),
 );
 
+// This allows the users to close the modal by clicking outside the modal
 subModal.addEventListener('mousedown', (evt) => {
   if (evt.target === subModal) {
     closeModal(subModal);
@@ -85,10 +98,12 @@ subModal.addEventListener('mousedown', (evt) => {
 
 const isValid = (inputEl) => inputEl.validity.valid;
 
+// This function checks the validity of the form input
 const checkInputValidity = (formEl, inputEl, settings) => {
   const errorEl = formEl.querySelector(`#${inputEl.id}-error`);
 
   if (!isValid(inputEl)) {
+    // If there is an error in the input field, the bottom border's color is changed to red, and the red error message becomes visible under the input field
     inputEl.classList.add(settings.inputErrorClass);
     console.log(formEl);
     console.log(inputEl);
@@ -96,6 +111,7 @@ const checkInputValidity = (formEl, inputEl, settings) => {
     errorEl.textContent = inputEl.validationMessage;
     errorEl.classList.add(settings.errorClass);
   } else {
+    // After making an error, if the users change the input to something acceptable, the red bottom border and the red error message will be removed
     inputEl.classList.remove(settings.inputErrorClass);
     console.log(inputEl);
     console.log(errorEl);
@@ -104,6 +120,8 @@ const checkInputValidity = (formEl, inputEl, settings) => {
   }
 };
 
+/* This function makes the "Subscribe" button become active when the users have entered acceptable
+  input, and makes the button become inactive if there is an error with the user input */
 const toggleButtonState = (
   inputList,
   buttonEl,
@@ -119,6 +137,7 @@ const toggleButtonState = (
   }
 };
 
+// This function sets up the event listeners of the input fields
 const setupEventListeners = (
   formEl,
   { inputSelector, submitButtonSelector, ...otherSettings },
@@ -135,6 +154,7 @@ const setupEventListeners = (
   });
 };
 
+// This function enables Form Validation for the form in the subscription modal
 const enableValidation = ({ formSelector, ...otherSettings }) => {
   const formList = [...document.querySelectorAll(formSelector)];
   formList.forEach((formEl) => {
@@ -145,6 +165,7 @@ const enableValidation = ({ formSelector, ...otherSettings }) => {
   });
 };
 
+// Validation settings, containing the selectors required for Form Validation
 enableValidation({
   formSelector: '.modal__form',
   inputSelector: '.modal__input',

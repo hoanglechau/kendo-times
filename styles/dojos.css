@@ -1,3 +1,8 @@
+/* The CSS style sheet of the Dojos page */
+
+/* The font-size, max-width, and max-height properties of some of these CSS selectors use "vw" and "vh"
+in order to achieve responsive web design */
+
 .dojos__heading {
   font-size: 4vw;
   margin: 20px auto;
@@ -83,6 +88,8 @@
   width: 800px;
   height: 600px;
 }
+
+/* Media queries for responsive web design */
 
 @media screen and (max-width: 1280px) {
   .dojos__heading {
